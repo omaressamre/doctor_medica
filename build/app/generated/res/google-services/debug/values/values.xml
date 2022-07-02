@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">556329239335-5r55ds9bg0f5hp0q6upej9vkcd91s0e0.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">556329239335</string>
+    <string name="google_api_key" translatable="false">AIzaSyCWSWi1Fprp0sh8bc7s44bM_uBPKq5s3Eg</string>
+    <string name="google_app_id" translatable="false">1:556329239335:android:5fab14235f82c50a7d9f02</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCWSWi1Fprp0sh8bc7s44bM_uBPKq5s3Eg</string>
+    <string name="google_storage_bucket" translatable="false">medica-43fa5.appspot.com</string>
+    <string name="project_id" translatable="false">medica-43fa5</string>
+</resources>
