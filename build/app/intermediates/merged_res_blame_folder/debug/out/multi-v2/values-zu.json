@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Development\\Projects\\Medica 2\\medica\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zu\\values-zu.xml",
+            "outputFile": "F:\\Development\\Projects\\doctor_medica\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zu\\values-zu.xml",
             "map": [
                 {
                     "source": "C:\\Users\\essam\\.gradle\\caches\\transforms-2\\files-2.1\\8eafd539fbb11d014d508692bbff6fb4\\jetified-play-services-base-18.0.1\\res\\values-zu\\values.xml",

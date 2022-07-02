@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Development\\Projects\\Medica 2\\medica\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-id\\values-id.xml",
+            "outputFile": "F:\\Development\\Projects\\doctor_medica\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-id\\values-id.xml",
             "map": [
                 {
                     "source": "C:\\Users\\essam\\.gradle\\caches\\transforms-2\\files-2.1\\f4034a1e969e3966c54ecfc71919481d\\jetified-facebook-common-13.2.0\\res\\values-id\\values-id.xml",

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Development\\Projects\\Medica 2\\medica\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\values-de\\values-de.xml",
+            "outputFile": "F:\\Development\\Projects\\doctor_medica\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\values-de\\values-de.xml",
             "map": [
                 {
                     "source": "C:\\Users\\essam\\.gradle\\caches\\transforms-2\\files-2.1\\cc91cf130b386aac8a252a7bb5e33ef9\\jetified-play-services-basement-18.0.0\\res\\values-de\\values.xml",
@@ -57,7 +57,7 @@
             ]
         },
         {
-            "outputFile": "F:\\Development\\Projects\\Medica 2\\medica\\build\\google_sign_in_android\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-de\\values-de.xml",
+            "outputFile": "F:\\Development\\Projects\\doctor_medica\\build\\google_sign_in_android\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-de\\values-de.xml",
             "map": [
                 {
                     "source": "C:\\Users\\essam\\.gradle\\caches\\transforms-2\\files-2.1\\cc91cf130b386aac8a252a7bb5e33ef9\\jetified-play-services-basement-18.0.0\\res\\values-de\\values.xml",

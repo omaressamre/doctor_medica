@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Development\\Projects\\Medica 2\\medica\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v31\\values-v31.xml",
+            "outputFile": "F:\\Development\\Projects\\doctor_medica\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v31\\values-v31.xml",
             "map": [
                 {
-                    "source": "F:\\Development\\Projects\\Medica 2\\medica\\android\\app\\src\\main\\res\\values-v31\\styles.xml",
+                    "source": "F:\\Development\\Projects\\doctor_medica\\android\\app\\src\\main\\res\\values-v31\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

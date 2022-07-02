@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Development\\Projects\\Medica 2\\medica\\build\\google_sign_in_android\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
+            "outputFile": "F:\\Development\\Projects\\doctor_medica\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\values-watch-v20\\values-watch-v20.xml",
             "map": [
                 {
                     "source": "C:\\Users\\essam\\.gradle\\caches\\transforms-2\\files-2.1\\dde8123699beefea89e68cbe3f2d9e23\\jetified-play-services-auth-20.0.1\\res\\values-watch-v20\\values.xml",
@@ -23,7 +23,7 @@
             ]
         },
         {
-            "outputFile": "F:\\Development\\Projects\\Medica 2\\medica\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\values-watch-v20\\values-watch-v20.xml",
+            "outputFile": "F:\\Development\\Projects\\doctor_medica\\build\\google_sign_in_android\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
             "map": [
                 {
                     "source": "C:\\Users\\essam\\.gradle\\caches\\transforms-2\\files-2.1\\dde8123699beefea89e68cbe3f2d9e23\\jetified-play-services-auth-20.0.1\\res\\values-watch-v20\\values.xml",

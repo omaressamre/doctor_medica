@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Development\\Projects\\Medica 2\\medica\\build\\google_sign_in_android\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sv\\values-sv.xml",
+            "outputFile": "F:\\Development\\Projects\\doctor_medica\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\values-sv\\values-sv.xml",
             "map": [
                 {
                     "source": "C:\\Users\\essam\\.gradle\\caches\\transforms-2\\files-2.1\\6f6da31ded36fd59bf0fb59f8c9437af\\core-1.6.0\\res\\values-sv\\values-sv.xml",
@@ -57,7 +57,7 @@
             ]
         },
         {
-            "outputFile": "F:\\Development\\Projects\\Medica 2\\medica\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\values-sv\\values-sv.xml",
+            "outputFile": "F:\\Development\\Projects\\doctor_medica\\build\\google_sign_in_android\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sv\\values-sv.xml",
             "map": [
                 {
                     "source": "C:\\Users\\essam\\.gradle\\caches\\transforms-2\\files-2.1\\6f6da31ded36fd59bf0fb59f8c9437af\\core-1.6.0\\res\\values-sv\\values-sv.xml",
