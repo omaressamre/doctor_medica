@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:medica/loginType.dart';
 import 'package:medica/patient%20_login.dart';
 import 'package:medica/patient_register.dart';
 import 'package:medica/view/widgets/constance.dart';

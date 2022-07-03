@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:medica/loginType.dart';
+import 'package:medica/doctor_getstarted.dart';
 import 'package:medica/main.dart';
 
 class Splash extends StatefulWidget {
@@ -20,7 +20,7 @@ class _SplashState extends State<Splash> {
     Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => loginAs(),
+          builder: (context) => doctor_getstarted(),
         ));
   }
 

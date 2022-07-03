@@ -141,7 +141,9 @@ class patient_register extends GetWidget<AuthViewModel> {
                                 if (value!.isEmpty) {
                                   return "\t\t\t\t\tPlease Enter E-Mail";
                                 }
-                                if(!RegExp("^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+.[a-z]").hasMatch(value)){
+                                if (!RegExp(
+                                        "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+.[a-z]")
+                                    .hasMatch(value)) {
                                   return "\t\t\t\t\tPlease Enter Valid E-Mail";
                                 }
                               }),
@@ -226,10 +228,9 @@ class patient_register extends GetWidget<AuthViewModel> {
                                   _formKey.currentState?.save();
                                   if (_formKey.currentState!.validate()) {
                                     controller
-                                        .createAccountWithEmailAndPassword(
-                                            );
-                                            print("Successful");
-                                  }else{
+                                        .createAccountWithEmailAndPassword();
+                                    print("Successful");
+                                  } else {
                                     print("Unsuccessful");
                                   }
                                 },
@@ -298,99 +299,97 @@ class patient_register extends GetWidget<AuthViewModel> {
             ]),
           ),
         ),
-      Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              SizedBox(
-                height: size.height * 0.05,
-              ),
-              CustomText(
-                text: 'MEDICA',
-                textStyle: TextStyle(
-                    color: Colors.white,
-                    fontSize: 32,
-                    fontFamily: 'Inter',
-                    fontWeight: FontWeight.w600),
-              ),
-              SizedBox(
-                height: size.height * 0.02,
-              ),
-              Stack(
-                children:[
-                  Container(
-                    child: CircleAvatar(
-                          radius: 51,
-                          backgroundColor: Colors.purple,
-                          child: CircleAvatar(
-                            radius: 46,
-                            // backgroundImage: _pickedImage == null
-                            //  ? null 
-                            //  : FileImage(_pickedImage),
-                            child: SvgPicture.asset(
-                    'assets/images/user_register.svg',
-                    width: size.width * 0.26,
-                ),
-                          ),
-                        ),
+        Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            SizedBox(
+              height: size.height * 0.05,
+            ),
+            CustomText(
+              text: 'MEDICA',
+              textStyle: TextStyle(
+                  color: Colors.white,
+                  fontSize: 32,
+                  fontFamily: 'Inter',
+                  fontWeight: FontWeight.w600),
+            ),
+            SizedBox(
+              height: size.height * 0.02,
+            ),
+            Stack(children: [
+              Container(
+                child: CircleAvatar(
+                  radius: 51,
+                  backgroundColor: Colors.purple,
+                  child: CircleAvatar(
+                    radius: 46,
+                    // backgroundImage: _pickedImage == null
+                    //  ? null
+                    //  : FileImage(_pickedImage),
+                    child: SvgPicture.asset(
+                      'assets/images/user_register.svg',
+                      width: size.width * 0.26,
+                    ),
                   ),
-                  
-                  Positioned(
-                    top: 58,
-                    left: 35,
-                    child: RawMaterialButton(
-                      fillColor: primaryColor,
-                      child: Icon(Icons.add),
-                      shape: CircleBorder(),
-                      onPressed: (){
-                        showDialog(context: context,
-                          builder: (BuildContext context){
-                          return AlertDialog(title: Text("Choose Option: ",
-                          style: TextStyle(
-                            fontFamily: 'Inter',
-                            color: primaryColor
-                          ),),
-                          content: SingleChildScrollView(
-                            child: ListBody(
-                              children: [
-                                InkWell(
-                                  splashColor: primaryColor,
-                                  child: Row(
-                                    children: [
-                                      Icon(
-                                        Icons.logout
-                                        color: primaryColor,
-                                      )
-                                    ],
-                                  ),
-                                )
-                              ]),
-                          ),
-                          );
-                        });
-                      },
-                    )),
-                    
-                  ] 
+                ),
               ),
-              SizedBox(
-                height: size.height * 0.02,
-              ),
-              CustomText(
-                text: 'Register to Continue',
-                textStyle: TextStyle(
-                    color: Colors.white,
-                    fontFamily: 'Inter',
-                    fontSize: size.width * 0.06),
-              ),
-              Divider(
-                color: Color(0xffFEB197),
-                indent: size.width * 0.4,
-                endIndent: size.width * 0.4,
-                height: 15,
-                thickness: 2,
-              ),
-            ],
-          ),])),
+              Positioned(
+                  top: 58,
+                  left: 35,
+                  child: RawMaterialButton(
+                    fillColor: primaryColor,
+                    child: Icon(Icons.add),
+                    shape: CircleBorder(),
+                    onPressed: () {
+                      showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return AlertDialog(
+                              title: Text(
+                                "Choose Option: ",
+                                style: TextStyle(
+                                    fontFamily: 'Inter', color: primaryColor),
+                              ),
+                              content: SingleChildScrollView(
+                                child: ListBody(children: [
+                                  InkWell(
+                                    splashColor: primaryColor,
+                                    child: Row(
+                                      children: [
+                                        Icon(
+                                          Icons.camera,
+                                          color: primaryColor,
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ]),
+                              ),
+                            );
+                          });
+                    },
+                  )),
+            ]),
+            SizedBox(
+              height: size.height * 0.02,
+            ),
+            CustomText(
+              text: 'Register to Continue',
+              textStyle: TextStyle(
+                  color: Colors.white,
+                  fontFamily: 'Inter',
+                  fontSize: size.width * 0.06),
+            ),
+            Divider(
+              color: Color(0xffFEB197),
+              indent: size.width * 0.4,
+              endIndent: size.width * 0.4,
+              height: 15,
+              thickness: 2,
+            ),
+          ],
+        ),
+      ])),
     );
   }
 }

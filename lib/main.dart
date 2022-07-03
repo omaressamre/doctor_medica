@@ -15,7 +15,6 @@ import 'package:medica/splash.dart';
 import 'package:medica/view/widgets/constance.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:medica/selectSpeciality.dart';
-import 'loginType.dart';
 
 void main() async {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();

@@ -13,12 +13,20 @@ import 'package:medica/view/widgets/custom_background.dart';
 import 'package:medica/view/widgets/custom_text.dart';
 import 'package:medica/view/widgets/custom_text_form_field.dart';
 import 'package:medica/view/widgets/my_flutter_app_icons.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'doctor_getstarted.dart';
 
 class doctor_login extends GetWidget<AuthViewModel> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+  final CheckController ctrl = Get.put(CheckController());
   var confirmPass;
+
+  void keepUserLoggedIn() async {
+    SharedPreferences preferences = await SharedPreferences.getInstance();
+    preferences.setBool(k_keepMeLoggedIn, ctrl.checkbool.value);
+  }
+
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
@@ -215,6 +223,30 @@ class doctor_login extends GetWidget<AuthViewModel> {
                               height: size.height * 0.02,
                             ),
                             Row(
+                              children: <Widget> [
+                                Theme(
+                                  data: ThemeData(unselectedWidgetColor: primaryColor),
+                                  child:  Obx(()=> Checkbox( 
+                                    checkColor: primaryColor,
+                                    activeColor: secondaryColor,
+                                    value: ctrl.checkbool.value,
+                                    onChanged: (value)
+                                  {
+                                      ctrl.checkbool.value = !ctrl.checkbool.value;
+                                      print(ctrl.checkbool.value);
+                                  },
+                                  ),
+                                  ),
+                                ),
+                                CustomText(text: "Remember Me ", 
+                                textStyle: TextStyle(
+                                          color: Color(0xff300C92),
+                                          fontFamily: 'Inter',
+                                          fontWeight: FontWeight.w600,
+                                          fontSize: 14)),
+                              ],
+                            ),
+                            Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 CustomText(
@@ -253,4 +285,7 @@ class doctor_login extends GetWidget<AuthViewModel> {
           ])),
     );
   }
+}
+class CheckController extends GetxController{
+  var checkbool = false.obs;
 }
