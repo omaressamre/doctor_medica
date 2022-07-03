@@ -7,9 +7,8 @@ import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:medica/patient_getstarted.dart';
 
-import '../../patient_home.dart';
+import '../../doctor_home.dart';
 
 class AuthViewModel extends GetxController {
   late String _get_name = "NAME";
@@ -19,7 +18,8 @@ class AuthViewModel extends GetxController {
   set get_name(String get_name) {
     _get_name = get_name;
   }
-  late String email, password, name;
+
+  late String email, password, name, phone;
 
   FirebaseAuth _auth = FirebaseAuth.instance;
   GoogleSignIn _googleSignIn = GoogleSignIn(scopes: ['email']);
@@ -29,7 +29,7 @@ class AuthViewModel extends GetxController {
   void onClose() {
     // TODO: implement onClose
     super.onClose();
-}
+  }
 
   @override
   void onInit() {
@@ -59,11 +59,11 @@ class AuthViewModel extends GetxController {
   }
 
   void signInWithEmailAndPassword() async {
-        get_name = "...";
+    get_name = "...";
     try {
       await _auth.signInWithEmailAndPassword(email: email, password: password);
-       FirebaseFirestore.instance
-          .collection('Users')
+      FirebaseFirestore.instance
+          .collection('Doctors')
           .doc((await FirebaseAuth.instance.currentUser)?.uid)
           .get()
           .then((ds) {
@@ -73,7 +73,6 @@ class AuthViewModel extends GetxController {
       }).catchError((e) {
         print(e);
       });
-       
     } catch (FirebaseException) {
       print(FirebaseException);
       Get.snackbar(
@@ -91,11 +90,12 @@ class AuthViewModel extends GetxController {
           .createUserWithEmailAndPassword(email: email, password: password)
           .then((_user) {
         FirebaseFirestore.instance
-            .collection('Users')
+            .collection('Doctors')
             .doc(_user.user!.uid)
             .set({
           'uid': _user.user?.uid,
           'email': email,
+          'phone': phone,
           'password': password,
           'name': name
         });
@@ -121,4 +121,3 @@ class AuthViewModel extends GetxController {
   }
   */
 }
-

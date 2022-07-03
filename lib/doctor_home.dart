@@ -5,12 +5,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:medica/patient%20_login.dart';
-import 'package:medica/patient_book.dart';
-import 'package:medica/patient_getstarted.dart';
-import 'package:medica/patient_register.dart';
-import 'package:medica/patient_symptoms.dart';
-import 'package:medica/patient_consult.dart';
+import 'package:medica/doctor_book.dart';
+import 'package:medica/doctor_getstarted.dart';
+import 'package:medica/doctor_symptoms.dart';
 import 'package:medica/view/widgets/HomeCurve.dart';
 import 'package:medica/view/widgets/LnRCurve.dart';
 import 'package:medica/view/widgets/constance.dart';
@@ -74,7 +71,7 @@ class patient_home extends StatelessWidget {
     return WillPopScope(
       onWillPop: () async {
         // Get.to(loginAs());
-        Get.to(() => patient_getstarted());
+        Get.to(() => doctor_getstarted());
         return true;
       },
       child: Scaffold(

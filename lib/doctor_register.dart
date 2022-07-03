@@ -5,8 +5,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:medica/core/view_model/auth_view_model.dart';
 import 'package:medica/doctor_login.dart';
-import 'package:medica/patient_getstarted.dart';
-import 'package:medica/patient_register.dart';
 import 'package:medica/view/widgets/LnRCurve.dart';
 import 'package:medica/view/widgets/constance.dart';
 import 'package:medica/view/widgets/custom_background.dart';
@@ -18,6 +16,7 @@ import 'doctor_getstarted.dart';
 
 class doctor_register extends GetWidget<AuthViewModel> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+  final AuthViewModel avm = Get.put(AuthViewModel());
   var confirmPass;
   @override
   Widget build(BuildContext context) {
@@ -196,7 +195,7 @@ class doctor_register extends GetWidget<AuthViewModel> {
                                 color: Color(0xffF95DDE),
                               ),
                               onSave: (value) {
-                                controller.email = value!;
+                                controller.phone = value!;
                               },
                               validator: (value) {
                                 if (value == null) {
@@ -255,6 +254,9 @@ class doctor_register extends GetWidget<AuthViewModel> {
                                   if (_formKey.currentState!.validate()) {
                                     controller
                                         .createAccountWithEmailAndPassword();
+                                    print("Successful");
+                                  } else {
+                                    print("Unsuccessful");
                                   }
                                 },
                                 style: TextButton.styleFrom(

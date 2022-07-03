@@ -5,8 +5,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:medica/core/view_model/auth_view_model.dart';
 import 'package:medica/doctor_register.dart';
-import 'package:medica/patient_getstarted.dart';
-import 'package:medica/patient_register.dart';
 import 'package:medica/view/widgets/LnRCurve.dart';
 import 'package:medica/view/widgets/constance.dart';
 import 'package:medica/view/widgets/custom_background.dart';
@@ -20,6 +18,7 @@ import 'doctor_getstarted.dart';
 class doctor_login extends GetWidget<AuthViewModel> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   final CheckController ctrl = Get.put(CheckController());
+  final AuthViewModel avm = Get.put(AuthViewModel());
   var confirmPass;
 
   void keepUserLoggedIn() async {
@@ -169,7 +168,7 @@ class doctor_login extends GetWidget<AuthViewModel> {
                                   if (value!.isEmpty) {
                                     return "Please Enter New Password";
                                   } else if (value.length < 8) {
-                                    return "Password must be atleast 8 characters long";
+                                    return "Password must be at least 8 characters long";
                                   } else {
                                     return null;
                                   }
@@ -190,8 +189,10 @@ class doctor_login extends GetWidget<AuthViewModel> {
                                     _formKey.currentState?.save();
 
                                     if (_formKey.currentState!.validate()) {
-                                      controller
-                                          .createAccountWithEmailAndPassword();
+                                      if (ctrl.checkbool.value == true) {
+                                        keepUserLoggedIn();
+                                      }
+                                      controller.signInWithEmailAndPassword();
                                     }
                                   },
                                   style: TextButton.styleFrom(
@@ -223,27 +224,30 @@ class doctor_login extends GetWidget<AuthViewModel> {
                               height: size.height * 0.02,
                             ),
                             Row(
-                              children: <Widget> [
+                              children: <Widget>[
                                 Theme(
-                                  data: ThemeData(unselectedWidgetColor: primaryColor),
-                                  child:  Obx(()=> Checkbox( 
-                                    checkColor: primaryColor,
-                                    activeColor: secondaryColor,
-                                    value: ctrl.checkbool.value,
-                                    onChanged: (value)
-                                  {
-                                      ctrl.checkbool.value = !ctrl.checkbool.value;
-                                      print(ctrl.checkbool.value);
-                                  },
-                                  ),
+                                  data: ThemeData(
+                                      unselectedWidgetColor: primaryColor),
+                                  child: Obx(
+                                    () => Checkbox(
+                                      checkColor: primaryColor,
+                                      activeColor: secondaryColor,
+                                      value: ctrl.checkbool.value,
+                                      onChanged: (value) {
+                                        ctrl.checkbool.value =
+                                            !ctrl.checkbool.value;
+                                        print(ctrl.checkbool.value);
+                                      },
+                                    ),
                                   ),
                                 ),
-                                CustomText(text: "Remember Me ", 
-                                textStyle: TextStyle(
-                                          color: Color(0xff300C92),
-                                          fontFamily: 'Inter',
-                                          fontWeight: FontWeight.w600,
-                                          fontSize: 14)),
+                                CustomText(
+                                    text: "Remember Me ",
+                                    textStyle: TextStyle(
+                                        color: Color(0xff300C92),
+                                        fontFamily: 'Inter',
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 14)),
                               ],
                             ),
                             Row(
@@ -286,6 +290,7 @@ class doctor_login extends GetWidget<AuthViewModel> {
     );
   }
 }
-class CheckController extends GetxController{
+
+class CheckController extends GetxController {
   var checkbool = false.obs;
 }

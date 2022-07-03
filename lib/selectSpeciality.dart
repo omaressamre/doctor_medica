@@ -3,8 +3,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:medica/core/view_model/auth_view_model.dart';
 import 'package:medica/doctor_register.dart';
-import 'package:medica/patient_getstarted.dart';
-import 'package:medica/patient_register.dart';
 import 'package:medica/view/widgets/LnRCurve.dart';
 import 'package:medica/view/widgets/constance.dart';
 import 'package:medica/view/widgets/custom_background.dart';
