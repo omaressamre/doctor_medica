@@ -191,8 +191,8 @@ class doctor_register extends GetWidget<AuthViewModel> {
                               color: Color(0xff300C92),
                               hint: '+20XXXXXXXXXX',
                               icon_name: Icon(
-                                MyFlutterApp.mail,
-                                size: 12,
+                                Icons.phone,
+                                size: 17,
                                 color: Color(0xffF95DDE),
                               ),
                               onSave: (value) {
