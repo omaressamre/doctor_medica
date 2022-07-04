@@ -193,6 +193,9 @@ flutter:
     - family: SpecialityIcons
       fonts:
         - asset: assets/icons/SpecialityIcons.ttf
+    - family: ProfileIcons
+      fonts:
+        - asset: assets/icons/ProfileIcons.ttf
 
   #   - family: Trajan Pro
   #     fonts:
