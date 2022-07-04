@@ -20,7 +20,7 @@ class doctor_register extends GetWidget<AuthViewModel> {
   final AuthViewModel avm = Get.put(AuthViewModel());
   var confirmPass;
   String specialityName = 'Select a speciality';
-  
+
   doctor_register() : specialityName = "Select a speciality";
 
   doctor_register.getspeciality(this.specialityName);
@@ -30,7 +30,6 @@ class doctor_register extends GetWidget<AuthViewModel> {
   set name(String name) {
     specialityName = name;
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -355,6 +354,7 @@ class doctor_register extends GetWidget<AuthViewModel> {
                           Container(
                             child: TextButton(
                                 onPressed: () {
+                                  controller.speciality = specialityName;
                                   _formKey.currentState?.save();
 
                                   if (_formKey.currentState!.validate()) {

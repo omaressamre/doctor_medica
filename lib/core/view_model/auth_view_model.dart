@@ -19,7 +19,7 @@ class AuthViewModel extends GetxController {
     _get_name = get_name;
   }
 
-  late String email, password, name, phone;
+  late String email, password, name, phone,speciality;
 
   FirebaseAuth _auth = FirebaseAuth.instance;
   GoogleSignIn _googleSignIn = GoogleSignIn(scopes: ['email']);
@@ -97,7 +97,8 @@ class AuthViewModel extends GetxController {
           'email': email,
           'phone': phone,
           'password': password,
-          'name': name
+          'name': name,
+          'speciality': speciality, 
         });
       });
       Get.offAll(() => patient_home.withuser(name));
