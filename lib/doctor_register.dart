@@ -12,6 +12,7 @@ import 'package:medica/view/widgets/custom_background.dart';
 import 'package:medica/view/widgets/custom_text.dart';
 import 'package:medica/view/widgets/custom_text_form_field.dart';
 import 'package:medica/view/widgets/my_flutter_app_icons.dart';
+import 'package:medica/view/widgets/profile_icons_icons.dart';
 
 import 'doctor_getstarted.dart';
 
@@ -307,15 +308,15 @@ class doctor_register extends GetWidget<AuthViewModel> {
                             child: Row(
                               children: [
                                 SizedBox(
-                                  width: size.width * 0.027,
+                                  width: size.width * 0.033,
                                 ),
                                 Icon(
-                                  MyFlutterApp.person,
-                                  size: 25,
+                                  ProfileIcons.path_16,
+                                  size: 20,
                                   color: Color(0xffF95DDE),
                                 ),
                                 SizedBox(
-                                  width: size.width * 0.027,
+                                  width: size.width * 0.033,
                                 ),
                                 CustomText(
                                   text: specialityName,
