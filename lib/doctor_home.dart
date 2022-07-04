@@ -8,6 +8,7 @@ import 'package:get/get.dart';
 import 'package:medica/doctor_book.dart';
 import 'package:medica/doctor_getstarted.dart';
 import 'package:medica/doctor_symptoms.dart';
+import 'package:medica/selectSpeciality.dart';
 import 'package:medica/view/widgets/HomeCurve.dart';
 import 'package:medica/view/widgets/LnRCurve.dart';
 import 'package:medica/view/widgets/constance.dart';
@@ -17,6 +18,7 @@ import 'package:medica/view/widgets/custom_text_form_field.dart';
 import 'package:medica/view/widgets/depts.dart';
 import 'package:medica/view/widgets/wavey_shape.dart';
 import 'package:medica/core/view_model/auth_view_model.dart';
+import 'package:get/get.dart';
 
 class patient_home extends StatelessWidget {
   patient_home() : _name = "DEFAULT";
@@ -266,7 +268,9 @@ class patient_home extends StatelessWidget {
                                     shape: RoundedRectangleBorder(
                                         borderRadius: BorderRadius.all(
                                             Radius.circular(15)))),
-                                onPressed: () {Get.to(() => patient_symptoms());},
+                                onPressed: () {
+                                  Get.to(() => patient_symptoms());
+                                },
                                 child: Padding(
                                   padding: EdgeInsets.symmetric(
                                       horizontal: size.width * 0.03),
@@ -504,7 +508,9 @@ class patient_home extends StatelessWidget {
                           ),
                         ),
                         TextButton(
-                          onPressed: () {Get.to(() => patient_book());},
+                          onPressed: () {
+                            Get.to(() => patient_book());
+                          },
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [

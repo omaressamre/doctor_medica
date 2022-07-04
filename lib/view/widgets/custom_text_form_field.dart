@@ -15,6 +15,7 @@ class CustomTextFromField extends StatelessWidget {
   final TextInputType keyboardType;
   final bool obscureText;
   final void Function(String?)? onSave;
+  final bool isReadonly;
   final FormFieldValidator<String>? validator;
   CustomTextFromField({
     required this.text,
@@ -26,6 +27,7 @@ class CustomTextFromField extends StatelessWidget {
     required this.validator,
     this.keyboardType = TextInputType.text,
     this.obscureText = false,
+    this.isReadonly = false,
   });
 
   @override
@@ -49,6 +51,7 @@ class CustomTextFromField extends StatelessWidget {
         TextFormField(
           obscureText: obscureText,
           onSaved: onSave,
+          readOnly: isReadonly,
           validator: validator,
           keyboardType: keyboardType,
           decoration: InputDecoration(
