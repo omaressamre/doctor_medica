@@ -19,6 +19,19 @@ class doctor_register extends GetWidget<AuthViewModel> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   final AuthViewModel avm = Get.put(AuthViewModel());
   var confirmPass;
+  String specialityName = 'Select a speciality';
+  
+  doctor_register() : specialityName = "Select a speciality";
+
+  doctor_register.getspeciality(this.specialityName);
+
+  String get name => specialityName;
+
+  set name(String name) {
+    specialityName = name;
+  }
+
+
   @override
   Widget build(BuildContext context) {
     // final isKeyboard = MediaQuery.of(context).viewInsets.bottom != 0;
@@ -306,7 +319,7 @@ class doctor_register extends GetWidget<AuthViewModel> {
                                   width: size.width * 0.027,
                                 ),
                                 CustomText(
-                                  text: 'Select a speciality',
+                                  text: specialityName,
                                   textStyle: TextStyle(
                                     color: Colors.grey[600],
                                     fontFamily: 'Inter',

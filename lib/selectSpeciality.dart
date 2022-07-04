@@ -103,7 +103,8 @@ class selectSpeciality extends StatelessWidget {
                           children: [
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() => doctor_register
+                                    .getspeciality('Allergy and Immunology'));
                               },
                               child: Row(
                                 children: [
@@ -142,7 +143,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() => doctor_register.getspeciality(
+                                    'Andrology and Male Infertility'));
                               },
                               child: Row(
                                 children: [
@@ -181,7 +183,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() =>
+                                    doctor_register.getspeciality('Audiology'));
                               },
                               child: Row(
                                 children: [
@@ -189,15 +192,15 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   Icon(
-                                    SpecialityIcons.allergy,
-                                    size: 28,
+                                    SpecialityIcons.audiology,
+                                    size: 22,
                                     color: Color(0xffF95DDE),
                                   ),
                                   SizedBox(
                                     width: size.width * 0.027,
                                   ),
                                   CustomText(
-                                    text: 'Allergy and Immunology',
+                                    text: '\tAudiology',
                                     textStyle: TextStyle(
                                       color: Colors.grey[800],
                                       fontFamily: 'Inter',
@@ -220,7 +223,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() => doctor_register.getspeciality(
+                                    'Cardiology and Thoracic Surgery'));
                               },
                               child: Row(
                                 children: [
@@ -228,7 +232,8 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   Icon(
-                                    SpecialityIcons.allergy,
+                                    SpecialityIcons
+                                        .cardiology_and_thoracic_surgery,
                                     size: 28,
                                     color: Color(0xffF95DDE),
                                   ),
@@ -236,7 +241,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   CustomText(
-                                    text: 'Allergy and Immunology',
+                                    text: 'Cardiology and Thoracic Surgery',
                                     textStyle: TextStyle(
                                       color: Colors.grey[800],
                                       fontFamily: 'Inter',
@@ -259,7 +264,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() => doctor_register.getspeciality(
+                                    'Cardiology and Vascular Disease'));
                               },
                               child: Row(
                                 children: [
@@ -267,7 +273,8 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   Icon(
-                                    SpecialityIcons.allergy,
+                                    SpecialityIcons
+                                        .cardiology_and_vascular_disease,
                                     size: 28,
                                     color: Color(0xffF95DDE),
                                   ),
@@ -275,7 +282,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   CustomText(
-                                    text: 'Allergy and Immunology',
+                                    text: 'Cardiology and Vascular Disease',
                                     textStyle: TextStyle(
                                       color: Colors.grey[800],
                                       fontFamily: 'Inter',
@@ -298,7 +305,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() => doctor_register
+                                    .getspeciality('Chest and Respiratory'));
                               },
                               child: Row(
                                 children: [
@@ -306,15 +314,15 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   Icon(
-                                    SpecialityIcons.allergy,
-                                    size: 28,
+                                    SpecialityIcons.chest,
+                                    size: 24,
                                     color: Color(0xffF95DDE),
                                   ),
                                   SizedBox(
                                     width: size.width * 0.027,
                                   ),
                                   CustomText(
-                                    text: 'Allergy and Immunology',
+                                    text: 'Chest and Respiratory',
                                     textStyle: TextStyle(
                                       color: Colors.grey[800],
                                       fontFamily: 'Inter',
@@ -337,7 +345,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() =>
+                                    doctor_register.getspeciality('Dentistry'));
                               },
                               child: Row(
                                 children: [
@@ -345,15 +354,15 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   Icon(
-                                    SpecialityIcons.allergy,
-                                    size: 28,
+                                    SpecialityIcons.dentistry,
+                                    size: 26,
                                     color: Color(0xffF95DDE),
                                   ),
                                   SizedBox(
                                     width: size.width * 0.027,
                                   ),
                                   CustomText(
-                                    text: 'Allergy and Immunology',
+                                    text: 'Dentistry',
                                     textStyle: TextStyle(
                                       color: Colors.grey[800],
                                       fontFamily: 'Inter',
@@ -376,7 +385,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() => doctor_register
+                                    .getspeciality('Dermatology'));
                               },
                               child: Row(
                                 children: [
@@ -384,15 +394,15 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   Icon(
-                                    SpecialityIcons.allergy,
-                                    size: 28,
+                                    SpecialityIcons.dermatology,
+                                    size: 25,
                                     color: Color(0xffF95DDE),
                                   ),
                                   SizedBox(
                                     width: size.width * 0.027,
                                   ),
                                   CustomText(
-                                    text: 'Allergy and Immunology',
+                                    text: 'Dermatology',
                                     textStyle: TextStyle(
                                       color: Colors.grey[800],
                                       fontFamily: 'Inter',
@@ -415,7 +425,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() => doctor_register.getspeciality(
+                                    'Diabetes and Endocrinology'));
                               },
                               child: Row(
                                 children: [
@@ -423,7 +434,8 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   Icon(
-                                    SpecialityIcons.allergy,
+                                    SpecialityIcons
+                                        .gastroenterology_and_endoscopy,
                                     size: 28,
                                     color: Color(0xffF95DDE),
                                   ),
@@ -431,7 +443,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   CustomText(
-                                    text: 'Allergy and Immunology',
+                                    text: 'Diabetes and Endocrinology',
                                     textStyle: TextStyle(
                                       color: Colors.grey[800],
                                       fontFamily: 'Inter',
@@ -454,7 +466,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() => doctor_register
+                                    .getspeciality('Diagnostic Radiology'));
                               },
                               child: Row(
                                 children: [
@@ -462,7 +475,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   Icon(
-                                    SpecialityIcons.allergy,
+                                    SpecialityIcons.diagnostic_radiology,
                                     size: 28,
                                     color: Color(0xffF95DDE),
                                   ),
@@ -470,7 +483,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   CustomText(
-                                    text: 'Allergy and Immunology',
+                                    text: 'Diagnostic Radiology',
                                     textStyle: TextStyle(
                                       color: Colors.grey[800],
                                       fontFamily: 'Inter',
@@ -493,7 +506,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() => doctor_register
+                                    .getspeciality('Dietitian and Nutrition'));
                               },
                               child: Row(
                                 children: [
@@ -501,15 +515,15 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   Icon(
-                                    SpecialityIcons.allergy,
-                                    size: 28,
+                                    SpecialityIcons.dietitian_and_nutrition,
+                                    size: 18,
                                     color: Color(0xffF95DDE),
                                   ),
                                   SizedBox(
                                     width: size.width * 0.027,
                                   ),
                                   CustomText(
-                                    text: 'Allergy and Immunology',
+                                    text: '\t\tDietitian and Nutrition',
                                     textStyle: TextStyle(
                                       color: Colors.grey[800],
                                       fontFamily: 'Inter',
@@ -532,7 +546,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() => doctor_register
+                                    .getspeciality('Ear,Nose and Throat'));
                               },
                               child: Row(
                                 children: [
@@ -540,7 +555,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   Icon(
-                                    SpecialityIcons.allergy,
+                                    SpecialityIcons.ear_nose_throat,
                                     size: 28,
                                     color: Color(0xffF95DDE),
                                   ),
@@ -548,7 +563,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   CustomText(
-                                    text: 'Allergy and Immunology',
+                                    text: 'Ear,Nose and Throat',
                                     textStyle: TextStyle(
                                       color: Colors.grey[800],
                                       fontFamily: 'Inter',
@@ -571,7 +586,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() => doctor_register
+                                    .getspeciality('Family Medicine'));
                               },
                               child: Row(
                                 children: [
@@ -579,7 +595,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   Icon(
-                                    SpecialityIcons.allergy,
+                                    SpecialityIcons.family,
                                     size: 28,
                                     color: Color(0xffF95DDE),
                                   ),
@@ -587,7 +603,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   CustomText(
-                                    text: 'Allergy and Immunology',
+                                    text: 'Family Medicine',
                                     textStyle: TextStyle(
                                       color: Colors.grey[800],
                                       fontFamily: 'Inter',
@@ -610,7 +626,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() => doctor_register.getspeciality(
+                                    'Gastroenterology and Endoscopy'));
                               },
                               child: Row(
                                 children: [
@@ -618,15 +635,15 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   Icon(
-                                    SpecialityIcons.allergy,
-                                    size: 28,
+                                    SpecialityIcons.gastroenterology,
+                                    size: 25,
                                     color: Color(0xffF95DDE),
                                   ),
                                   SizedBox(
                                     width: size.width * 0.027,
                                   ),
                                   CustomText(
-                                    text: 'Allergy and Immunology',
+                                    text: 'Gastroenterology and Endoscopy',
                                     textStyle: TextStyle(
                                       color: Colors.grey[800],
                                       fontFamily: 'Inter',
@@ -649,7 +666,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() => doctor_register
+                                    .getspeciality('General Practice'));
                               },
                               child: Row(
                                 children: [
@@ -657,7 +675,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   Icon(
-                                    SpecialityIcons.allergy,
+                                    SpecialityIcons.general_practice,
                                     size: 28,
                                     color: Color(0xffF95DDE),
                                   ),
@@ -665,7 +683,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   CustomText(
-                                    text: 'Allergy and Immunology',
+                                    text: 'General Practice',
                                     textStyle: TextStyle(
                                       color: Colors.grey[800],
                                       fontFamily: 'Inter',
@@ -688,7 +706,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() => doctor_register
+                                    .getspeciality('General Surgery'));
                               },
                               child: Row(
                                 children: [
@@ -696,15 +715,15 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   Icon(
-                                    SpecialityIcons.allergy,
-                                    size: 28,
+                                    SpecialityIcons.general,
+                                    size: 24,
                                     color: Color(0xffF95DDE),
                                   ),
                                   SizedBox(
                                     width: size.width * 0.027,
                                   ),
                                   CustomText(
-                                    text: 'Allergy and Immunology',
+                                    text: '\tGeneral Surgery',
                                     textStyle: TextStyle(
                                       color: Colors.grey[800],
                                       fontFamily: 'Inter',
@@ -727,7 +746,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() => doctor_register
+                                    .getspeciality('Geriatrics'));
                               },
                               child: Row(
                                 children: [
@@ -735,7 +755,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   Icon(
-                                    SpecialityIcons.allergy,
+                                    SpecialityIcons.geriatrics,
                                     size: 28,
                                     color: Color(0xffF95DDE),
                                   ),
@@ -743,7 +763,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   CustomText(
-                                    text: 'Allergy and Immunology',
+                                    text: 'Geriatrics',
                                     textStyle: TextStyle(
                                       color: Colors.grey[800],
                                       fontFamily: 'Inter',
@@ -766,7 +786,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() => doctor_register.getspeciality(
+                                    'Gynaecology and Infertility'));
                               },
                               child: Row(
                                 children: [
@@ -774,7 +795,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   Icon(
-                                    SpecialityIcons.allergy,
+                                    SpecialityIcons.gynaecology_and_infertility,
                                     size: 28,
                                     color: Color(0xffF95DDE),
                                   ),
@@ -782,7 +803,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   CustomText(
-                                    text: 'Allergy and Immunology',
+                                    text: 'Gynaecology and Infertility',
                                     textStyle: TextStyle(
                                       color: Colors.grey[800],
                                       fontFamily: 'Inter',
@@ -805,7 +826,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() => doctor_register
+                                    .getspeciality('Hematology'));
                               },
                               child: Row(
                                 children: [
@@ -813,7 +835,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   Icon(
-                                    SpecialityIcons.allergy,
+                                    SpecialityIcons.hematology,
                                     size: 28,
                                     color: Color(0xffF95DDE),
                                   ),
@@ -821,7 +843,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   CustomText(
-                                    text: 'Allergy and Immunology',
+                                    text: 'Hematology',
                                     textStyle: TextStyle(
                                       color: Colors.grey[800],
                                       fontFamily: 'Inter',
@@ -844,7 +866,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() => doctor_register
+                                    .getspeciality('Hepatology'));
                               },
                               child: Row(
                                 children: [
@@ -852,7 +875,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   Icon(
-                                    SpecialityIcons.allergy,
+                                    SpecialityIcons.hepatology,
                                     size: 28,
                                     color: Color(0xffF95DDE),
                                   ),
@@ -860,7 +883,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   CustomText(
-                                    text: 'Allergy and Immunology',
+                                    text: 'Hepatology',
                                     textStyle: TextStyle(
                                       color: Colors.grey[800],
                                       fontFamily: 'Inter',
@@ -883,7 +906,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() => doctor_register
+                                    .getspeciality('Internal Medicine'));
                               },
                               child: Row(
                                 children: [
@@ -891,15 +915,15 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   Icon(
-                                    SpecialityIcons.allergy,
-                                    size: 28,
+                                    SpecialityIcons.internal_medicine,
+                                    size: 18,
                                     color: Color(0xffF95DDE),
                                   ),
                                   SizedBox(
                                     width: size.width * 0.027,
                                   ),
                                   CustomText(
-                                    text: 'Allergy and Immunology',
+                                    text: '\t\tInternal Medicine',
                                     textStyle: TextStyle(
                                       color: Colors.grey[800],
                                       fontFamily: 'Inter',
@@ -922,7 +946,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() => doctor_register
+                                    .getspeciality('IVF and Infertility'));
                               },
                               child: Row(
                                 children: [
@@ -930,7 +955,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   Icon(
-                                    SpecialityIcons.allergy,
+                                    SpecialityIcons.ivf,
                                     size: 28,
                                     color: Color(0xffF95DDE),
                                   ),
@@ -938,7 +963,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   CustomText(
-                                    text: 'Allergy and Immunology',
+                                    text: 'IVF and Infertility',
                                     textStyle: TextStyle(
                                       color: Colors.grey[800],
                                       fontFamily: 'Inter',
@@ -961,7 +986,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() => doctor_register
+                                    .getspeciality('Laboratories'));
                               },
                               child: Row(
                                 children: [
@@ -969,7 +995,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   Icon(
-                                    SpecialityIcons.allergy,
+                                    SpecialityIcons.labortaries,
                                     size: 28,
                                     color: Color(0xffF95DDE),
                                   ),
@@ -977,7 +1003,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   CustomText(
-                                    text: 'Allergy and Immunology',
+                                    text: 'Laboratories',
                                     textStyle: TextStyle(
                                       color: Colors.grey[800],
                                       fontFamily: 'Inter',
@@ -1000,7 +1026,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() => doctor_register
+                                    .getspeciality('Nephrology'));
                               },
                               child: Row(
                                 children: [
@@ -1008,15 +1035,15 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   Icon(
-                                    SpecialityIcons.allergy,
-                                    size: 28,
+                                    SpecialityIcons.nephrology,
+                                    size: 24,
                                     color: Color(0xffF95DDE),
                                   ),
                                   SizedBox(
                                     width: size.width * 0.027,
                                   ),
                                   CustomText(
-                                    text: 'Allergy and Immunology',
+                                    text: '\tNephrology',
                                     textStyle: TextStyle(
                                       color: Colors.grey[800],
                                       fontFamily: 'Inter',
@@ -1039,7 +1066,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() =>
+                                    doctor_register.getspeciality('Neurology'));
                               },
                               child: Row(
                                 children: [
@@ -1047,7 +1075,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   Icon(
-                                    SpecialityIcons.allergy,
+                                    SpecialityIcons.neurology,
                                     size: 28,
                                     color: Color(0xffF95DDE),
                                   ),
@@ -1055,7 +1083,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   CustomText(
-                                    text: 'Allergy and Immunology',
+                                    text: 'Neurology',
                                     textStyle: TextStyle(
                                       color: Colors.grey[800],
                                       fontFamily: 'Inter',
@@ -1078,7 +1106,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() => doctor_register
+                                    .getspeciality('Neurosurgery'));
                               },
                               child: Row(
                                 children: [
@@ -1086,15 +1115,15 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   Icon(
-                                    SpecialityIcons.allergy,
-                                    size: 28,
+                                    SpecialityIcons.neurosurgery,
+                                    size: 22,
                                     color: Color(0xffF95DDE),
                                   ),
                                   SizedBox(
                                     width: size.width * 0.027,
                                   ),
                                   CustomText(
-                                    text: 'Allergy and Immunology',
+                                    text: '\tNeurosurgery',
                                     textStyle: TextStyle(
                                       color: Colors.grey[800],
                                       fontFamily: 'Inter',
@@ -1117,7 +1146,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() => doctor_register.getspeciality(
+                                    'Obesity and Laparoscopic Surgery'));
                               },
                               child: Row(
                                 children: [
@@ -1125,7 +1155,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   Icon(
-                                    SpecialityIcons.allergy,
+                                    SpecialityIcons.laparoscopic_,
                                     size: 28,
                                     color: Color(0xffF95DDE),
                                   ),
@@ -1133,7 +1163,7 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   CustomText(
-                                    text: 'Allergy and Immunology',
+                                    text: 'Obesity and Laparoscopic Surgery',
                                     textStyle: TextStyle(
                                       color: Colors.grey[800],
                                       fontFamily: 'Inter',
@@ -1156,7 +1186,8 @@ class selectSpeciality extends StatelessWidget {
                             ),
                             RawMaterialButton(
                               onPressed: () {
-                                Get.to(() => selectSpeciality());
+                                Get.to(() =>
+                                    doctor_register.getspeciality('Oncology'));
                               },
                               child: Row(
                                 children: [
@@ -1164,7 +1195,127 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   Icon(
-                                    SpecialityIcons.allergy,
+                                    SpecialityIcons.oncology,
+                                    size: 24,
+                                    color: Color(0xffF95DDE),
+                                  ),
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  CustomText(
+                                    text: 'Oncology',
+                                    textStyle: TextStyle(
+                                      color: Colors.grey[800],
+                                      fontFamily: 'Inter',
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.normal,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Divider(
+                              color: Color(0xff3E1E96),
+                              indent: size.width * 0.02,
+                              endIndent: size.width * 0.02,
+                              height: 1,
+                              thickness: 2,
+                            ),
+                            SizedBox(
+                              height: size.height * 0.014,
+                            ),
+                            RawMaterialButton(
+                              onPressed: () {
+                                Get.to(() => doctor_register
+                                    .getspeciality('Oncology Surgery'));
+                              },
+                              child: Row(
+                                children: [
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  Icon(
+                                    SpecialityIcons.oncology,
+                                    size: 24,
+                                    color: Color(0xffF95DDE),
+                                  ),
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  CustomText(
+                                    text: 'Oncology Surgery',
+                                    textStyle: TextStyle(
+                                      color: Colors.grey[800],
+                                      fontFamily: 'Inter',
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.normal,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Divider(
+                              color: Color(0xff3E1E96),
+                              indent: size.width * 0.02,
+                              endIndent: size.width * 0.02,
+                              height: 1,
+                              thickness: 2,
+                            ),
+                            SizedBox(
+                              height: size.height * 0.014,
+                            ),
+                            RawMaterialButton(
+                              onPressed: () {
+                                Get.to(() => doctor_register
+                                    .getspeciality('Ophthamology'));
+                              },
+                              child: Row(
+                                children: [
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  Icon(
+                                    SpecialityIcons.opthalmology,
+                                    size: 24,
+                                    color: Color(0xffF95DDE),
+                                  ),
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  CustomText(
+                                    text: 'Ophthamology',
+                                    textStyle: TextStyle(
+                                      color: Colors.grey[800],
+                                      fontFamily: 'Inter',
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.normal,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Divider(
+                              color: Color(0xff3E1E96),
+                              indent: size.width * 0.02,
+                              endIndent: size.width * 0.02,
+                              height: 1,
+                              thickness: 2,
+                            ),
+                            SizedBox(
+                              height: size.height * 0.014,
+                            ),
+                            RawMaterialButton(
+                              onPressed: () {
+                                Get.to(() => doctor_register
+                                    .getspeciality('Orthopedics'));
+                              },
+                              child: Row(
+                                children: [
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  Icon(
+                                    SpecialityIcons.orthopedics,
                                     size: 28,
                                     color: Color(0xffF95DDE),
                                   ),
@@ -1172,7 +1323,527 @@ class selectSpeciality extends StatelessWidget {
                                     width: size.width * 0.027,
                                   ),
                                   CustomText(
-                                    text: 'Allergy and Immunology',
+                                    text: 'Orthopedics',
+                                    textStyle: TextStyle(
+                                      color: Colors.grey[800],
+                                      fontFamily: 'Inter',
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.normal,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Divider(
+                              color: Color(0xff3E1E96),
+                              indent: size.width * 0.02,
+                              endIndent: size.width * 0.02,
+                              height: 1,
+                              thickness: 2,
+                            ),
+                            SizedBox(
+                              height: size.height * 0.014,
+                            ),
+                            RawMaterialButton(
+                              onPressed: () {
+                                Get.to(() =>
+                                    doctor_register.getspeciality('Oncology'));
+                              },
+                              child: Row(
+                                children: [
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  Icon(
+                                    SpecialityIcons.oncology,
+                                    size: 28,
+                                    color: Color(0xffF95DDE),
+                                  ),
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  CustomText(
+                                    text: 'Oncology',
+                                    textStyle: TextStyle(
+                                      color: Colors.grey[800],
+                                      fontFamily: 'Inter',
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.normal,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Divider(
+                              color: Color(0xff3E1E96),
+                              indent: size.width * 0.02,
+                              endIndent: size.width * 0.02,
+                              height: 1,
+                              thickness: 2,
+                            ),
+                            SizedBox(
+                              height: size.height * 0.014,
+                            ),
+                            RawMaterialButton(
+                              onPressed: () {
+                                Get.to(() => doctor_register
+                                    .getspeciality('Osteopathy'));
+                              },
+                              child: Row(
+                                children: [
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  Icon(
+                                    SpecialityIcons.physiotherapy,
+                                    size: 28,
+                                    color: Color(0xffF95DDE),
+                                  ),
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  CustomText(
+                                    text: 'Osteopathy',
+                                    textStyle: TextStyle(
+                                      color: Colors.grey[800],
+                                      fontFamily: 'Inter',
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.normal,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Divider(
+                              color: Color(0xff3E1E96),
+                              indent: size.width * 0.02,
+                              endIndent: size.width * 0.02,
+                              height: 1,
+                              thickness: 2,
+                            ),
+                            SizedBox(
+                              height: size.height * 0.014,
+                            ),
+                            RawMaterialButton(
+                              onPressed: () {
+                                Get.to(() => doctor_register
+                                    .getspeciality('Pain Managment'));
+                              },
+                              child: Row(
+                                children: [
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  Icon(
+                                    SpecialityIcons.pain_management,
+                                    size: 24,
+                                    color: Color(0xffF95DDE),
+                                  ),
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  CustomText(
+                                    text: '\tPain Managment',
+                                    textStyle: TextStyle(
+                                      color: Colors.grey[800],
+                                      fontFamily: 'Inter',
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.normal,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Divider(
+                              color: Color(0xff3E1E96),
+                              indent: size.width * 0.02,
+                              endIndent: size.width * 0.02,
+                              height: 1,
+                              thickness: 2,
+                            ),
+                            SizedBox(
+                              height: size.height * 0.014,
+                            ),
+                            RawMaterialButton(
+                              onPressed: () {
+                                Get.to(() => doctor_register
+                                    .getspeciality('Pediatric Surgery'));
+                              },
+                              child: Row(
+                                children: [
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  Icon(
+                                    SpecialityIcons.pediatrics,
+                                    size: 28,
+                                    color: Color(0xffF95DDE),
+                                  ),
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  CustomText(
+                                    text: 'Pediatric Surgery',
+                                    textStyle: TextStyle(
+                                      color: Colors.grey[800],
+                                      fontFamily: 'Inter',
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.normal,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Divider(
+                              color: Color(0xff3E1E96),
+                              indent: size.width * 0.02,
+                              endIndent: size.width * 0.02,
+                              height: 1,
+                              thickness: 2,
+                            ),
+                            SizedBox(
+                              height: size.height * 0.014,
+                            ),
+                            RawMaterialButton(
+                              onPressed: () {
+                                Get.to(() => doctor_register
+                                    .getspeciality('Pediatrics and New Born'));
+                              },
+                              child: Row(
+                                children: [
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  Icon(
+                                    SpecialityIcons.pediatrics_and_new_born,
+                                    size: 28,
+                                    color: Color(0xffF95DDE),
+                                  ),
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  CustomText(
+                                    text: 'Pediatrics and New Born',
+                                    textStyle: TextStyle(
+                                      color: Colors.grey[800],
+                                      fontFamily: 'Inter',
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.normal,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Divider(
+                              color: Color(0xff3E1E96),
+                              indent: size.width * 0.02,
+                              endIndent: size.width * 0.02,
+                              height: 1,
+                              thickness: 2,
+                            ),
+                            SizedBox(
+                              height: size.height * 0.014,
+                            ),
+                            RawMaterialButton(
+                              onPressed: () {
+                                Get.to(() => doctor_register
+                                    .getspeciality('Phoniatrics'));
+                              },
+                              child: Row(
+                                children: [
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  Icon(
+                                    SpecialityIcons.phoniatrics,
+                                    size: 28,
+                                    color: Color(0xffF95DDE),
+                                  ),
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  CustomText(
+                                    text: 'Phoniatrics',
+                                    textStyle: TextStyle(
+                                      color: Colors.grey[800],
+                                      fontFamily: 'Inter',
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.normal,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Divider(
+                              color: Color(0xff3E1E96),
+                              indent: size.width * 0.02,
+                              endIndent: size.width * 0.02,
+                              height: 1,
+                              thickness: 2,
+                            ),
+                            SizedBox(
+                              height: size.height * 0.014,
+                            ),
+                            RawMaterialButton(
+                              onPressed: () {
+                                Get.to(() => doctor_register.getspeciality(
+                                    'Physiotherapy and Sport Injuries'));
+                              },
+                              child: Row(
+                                children: [
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  Icon(
+                                    SpecialityIcons.sport_injuries,
+                                    size: 28,
+                                    color: Color(0xffF95DDE),
+                                  ),
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  CustomText(
+                                    text: 'Physiotherapy and Sport Injuries',
+                                    textStyle: TextStyle(
+                                      color: Colors.grey[800],
+                                      fontFamily: 'Inter',
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.normal,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Divider(
+                              color: Color(0xff3E1E96),
+                              indent: size.width * 0.02,
+                              endIndent: size.width * 0.02,
+                              height: 1,
+                              thickness: 2,
+                            ),
+                            SizedBox(
+                              height: size.height * 0.014,
+                            ),
+                            RawMaterialButton(
+                              onPressed: () {
+                                Get.to(() => doctor_register
+                                    .getspeciality('Plastic Surgery'));
+                              },
+                              child: Row(
+                                children: [
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  Icon(
+                                    SpecialityIcons.plastic_surgery,
+                                    size: 28,
+                                    color: Color(0xffF95DDE),
+                                  ),
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  CustomText(
+                                    text: 'Plastic Surgery',
+                                    textStyle: TextStyle(
+                                      color: Colors.grey[800],
+                                      fontFamily: 'Inter',
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.normal,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Divider(
+                              color: Color(0xff3E1E96),
+                              indent: size.width * 0.02,
+                              endIndent: size.width * 0.02,
+                              height: 1,
+                              thickness: 2,
+                            ),
+                            SizedBox(
+                              height: size.height * 0.014,
+                            ),
+                            RawMaterialButton(
+                              onPressed: () {
+                                Get.to(() => doctor_register
+                                    .getspeciality('Psychiatry'));
+                              },
+                              child: Row(
+                                children: [
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  Icon(
+                                    SpecialityIcons.psychiatry,
+                                    size: 28,
+                                    color: Color(0xffF95DDE),
+                                  ),
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  CustomText(
+                                    text: 'Psychiatry',
+                                    textStyle: TextStyle(
+                                      color: Colors.grey[800],
+                                      fontFamily: 'Inter',
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.normal,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Divider(
+                              color: Color(0xff3E1E96),
+                              indent: size.width * 0.02,
+                              endIndent: size.width * 0.02,
+                              height: 1,
+                              thickness: 2,
+                            ),
+                            SizedBox(
+                              height: size.height * 0.014,
+                            ),
+                            RawMaterialButton(
+                              onPressed: () {
+                                Get.to(() => doctor_register
+                                    .getspeciality('Rheumatology'));
+                              },
+                              child: Row(
+                                children: [
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  Icon(
+                                    SpecialityIcons.rheumatology,
+                                    size: 28,
+                                    color: Color(0xffF95DDE),
+                                  ),
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  CustomText(
+                                    text: 'Rheumatology',
+                                    textStyle: TextStyle(
+                                      color: Colors.grey[800],
+                                      fontFamily: 'Inter',
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.normal,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Divider(
+                              color: Color(0xff3E1E96),
+                              indent: size.width * 0.02,
+                              endIndent: size.width * 0.02,
+                              height: 1,
+                              thickness: 2,
+                            ),
+                            SizedBox(
+                              height: size.height * 0.014,
+                            ),
+                            RawMaterialButton(
+                              onPressed: () {
+                                Get.to(() => doctor_register
+                                    .getspeciality('Spinal Surgery'));
+                              },
+                              child: Row(
+                                children: [
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  Icon(
+                                    SpecialityIcons.spinal_surgery_2,
+                                    size: 26,
+                                    color: Color(0xffF95DDE),
+                                  ),
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  CustomText(
+                                    text: 'Spinal Surgery',
+                                    textStyle: TextStyle(
+                                      color: Colors.grey[800],
+                                      fontFamily: 'Inter',
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.normal,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Divider(
+                              color: Color(0xff3E1E96),
+                              indent: size.width * 0.02,
+                              endIndent: size.width * 0.02,
+                              height: 1,
+                              thickness: 2,
+                            ),
+                            SizedBox(
+                              height: size.height * 0.014,
+                            ),
+                            RawMaterialButton(
+                              onPressed: () {
+                                Get.to(() => doctor_register
+                                    .getspeciality('Urology'));
+                              },
+                              child: Row(
+                                children: [
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  Icon(
+                                    SpecialityIcons.urology,
+                                    size: 24,
+                                    color: Color(0xffF95DDE),
+                                  ),
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  CustomText(
+                                    text: 'Urology',
+                                    textStyle: TextStyle(
+                                      color: Colors.grey[800],
+                                      fontFamily: 'Inter',
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.normal,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Divider(
+                              color: Color(0xff3E1E96),
+                              indent: size.width * 0.02,
+                              endIndent: size.width * 0.02,
+                              height: 1,
+                              thickness: 2,
+                            ),
+                            SizedBox(
+                              height: size.height * 0.014,
+                            ),
+                            RawMaterialButton(
+                              onPressed: () {
+                                Get.to(() => doctor_register
+                                    .getspeciality('Vascular Surgery'));
+                              },
+                              child: Row(
+                                children: [
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  Icon(
+                                    SpecialityIcons.vascular_surgery,
+                                    size: 26,
+                                    color: Color(0xffF95DDE),
+                                  ),
+                                  SizedBox(
+                                    width: size.width * 0.027,
+                                  ),
+                                  CustomText(
+                                    text: 'Vascular Surgery',
                                     textStyle: TextStyle(
                                       color: Colors.grey[800],
                                       fontFamily: 'Inter',
